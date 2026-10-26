@@ -1,0 +1,23 @@
+name: polaris_app
+description: POLARIS — Path to Reach the Top. Flagship dark-mode mobile performance, habit, schedule, nutrition, expense, and voice/text journal app.
+publish_to: 'none'
+version: 3.0.0+3
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  record: ^5.1.2
+  audioplayers: ^6.1.0
+  path_provider: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
