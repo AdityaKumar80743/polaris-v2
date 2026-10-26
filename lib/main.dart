@@ -1703,14 +1703,23 @@ class _PolarisShellState extends State<PolarisShell> with WidgetsBindingObserver
         children: [
           Row(
             children: [
-              Container(
-                width: 32,
-                height: 32,
-                decoration: const BoxDecoration(
-                  color: PolarisColors.surface,
-                  shape: BoxShape.circle,
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: Image.asset(
+                  'assets/logo.png',
+                  width: 32,
+                  height: 32,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) => Container(
+                    width: 32,
+                    height: 32,
+                    decoration: const BoxDecoration(
+                      color: PolarisColors.surface,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(Icons.explore_rounded, color: PolarisColors.coral, size: 18),
+                  ),
                 ),
-                child: const Icon(Icons.explore_rounded, color: PolarisColors.coral, size: 18),
               ),
               const SizedBox(width: 8),
               const Text(
